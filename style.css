@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-wrapper {
+    background-color: hsl(233, 47%, 7%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px
+}
+
+.section-card-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 42px;
+}
+.section-card-title-purple {
+    color: hsl(277, 64%, 61%);
+}
+
+.section-card {
+    height: 500px;
+    width: 80%;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+}
+.section-card-image {
+   height: 100%;
+   flex: 1;
+   background-image: url("images/image-header-desktop.jpg"), linear-gradient(hsl(277, 64%, 61%), hsl(277, 64%, 61%)); /* W3C */
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.section-card-text {
+    flex: 1;
+    padding: 40px 80px 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+}
+
+.section-card-footer {
+    display: flex;
+    gap: 70px;
+}
+.section-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-card-info-title {
+    text-transform: uppercase;
+}
+.section-card-number {
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.section-card-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 30px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+.section-card-info-title {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: small;
+}
+
+@media (max-width: 786px) {
+    .section-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .section-card-image {
+        min-height:300px;
+        order: 1;
+    }
+    .section-card-text {
+        order: 2;
+        text-align: center;
+        padding: 40px 20px 30px 20px;
+
+    }
+    .section-card-title {
+        font-size: 24px;
+    }
+    .section-card-footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        gap: 30px;
+    }
+    .page-wrapper {
+        height: 100%;
+    }
+    .section-card-info {
+        width: 100%;
+        align-items: center;
+    }
+}
